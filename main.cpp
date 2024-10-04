@@ -56,6 +56,7 @@ int main()
         my_deck.shuffleDeck();
 
         cout << "\n" << endl;
+        this_thread::sleep_for(chrono::seconds(1));
 
         do {
             system("CLS");
@@ -85,6 +86,7 @@ int main()
                     cout << "Player STANDING. Waiting for dealer..." << endl;
                     DEALER_SCORE = dealer.getDeckValue();
                     cout << "Dealer hand:" << endl;
+                    dealer.currentHand();
                     cout << "Dealer hand value: " << DEALER_SCORE << endl;
                     if (DEALER_SCORE < 17) {
                         Card new_card = cards[0];
@@ -159,6 +161,7 @@ int main()
             fakeSleep("Reset game", "Reset completed!");
             SUB_GAME = 1;
             ACTION = "";
+            this_thread::sleep_for(chrono::seconds(1));
             system("CLS");
         }
     } while (GAME_ON);
