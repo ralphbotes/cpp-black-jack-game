@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1728065760 source:f:\users\ralph\projects\c++ mini projects\black jack game\main.cpp
+	<iostream>
+	<vector>
+	<string>
+	<chrono>
+	<thread>
+	<cstdlib>
+	"Deck.h"
+	"Card.h"
+	"Player.h"
+
+1728062681 f:\users\ralph\projects\c++ mini projects\black jack game\include\deck.h
+	<iostream>
+	<string>
+	<random>
+	<vector>
+	<algorithm>
+	"Card.h"
+
+1728062264 f:\users\ralph\projects\c++ mini projects\black jack game\include\card.h
+	<string>
+	<algorithm>
+	<list>
+
+1728066144 f:\users\ralph\projects\c++ mini projects\black jack game\include\player.h
+	<iostream>
+	<vector>
+	<string>
+	"Card.h"
+
