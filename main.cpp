@@ -86,12 +86,12 @@ int main()
                     DEALER_SCORE = dealer.getDeckValue();
                     cout << "Dealer hand:" << endl;
                     cout << "Dealer hand value: " << DEALER_SCORE << endl;
-                    if (DEALER_SCORE < 16) {
+                    if (DEALER_SCORE < 17) {
                         Card new_card = cards[0];
                         cout << "Card: " << new_card;
                         dealer.addCard(new_card);
                         my_deck.removeFromDeck(new_card);
-                    } else if (DEALER_SCORE >= 16 && DEALER_SCORE <= 21) {
+                    } else if (DEALER_SCORE >= 17 && DEALER_SCORE <= 21) {
                         if (DEALER_SCORE < PLAYER_SCORE) {
                             cout << "Player WON!" << endl;
                             cout << "Congratulations " << player.getName() << "!" << endl;
